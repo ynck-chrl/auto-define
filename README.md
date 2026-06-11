@@ -416,7 +416,7 @@ try {
 
 ---
 
-### No undefined custom elements — resolves immediately
+### No undefined custom elements -> resolves immediately
 
 If every hyphenated element in the target is already defined (or there are none), `autoDefine` resolves immediately with no network activity:
 
@@ -429,7 +429,7 @@ await autoDefine() // no imports, resolves instantly
 
 ---
 
-### All candidates fail — always warns
+### All candidates fail -> always warns
 
 When a tag's file cannot be found at any of the three candidate paths, `autoDefine` emits a `console.warn` unconditionally and adds the tag to the `failed` array:
 
@@ -538,6 +538,6 @@ If `observe: true` is set and no `signal` is provided, the `MutationObserver` ru
 
 ## License
 
-MIT.
+MIT License. Copyright (c) 2026 ynck-chrl.
 
 See [LICENSE](./LICENSE) for the full text.
